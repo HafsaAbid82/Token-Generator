@@ -1,0 +1,87 @@
+#root{
+    margin: 0 auto;
+     color:  white;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 16px;
+      background-color: black;
+}
+.block{
+    padding: 20px;
+    text-align: center;
+    width:800px;
+}
+.card{
+    background-color: var(--51386d66);
+    border: 1px solid var(--1d9c24b0);
+    display: grid;
+   margin: 5px;
+   padding: 10px;
+}
+.card_btn button{
+    margin: 10px;
+}
+button:hover{
+        border: 1px solid green;
+}
+
+.card_switch{
+    display: inline-flex;
+    padding: 20px;
+}
+.display{
+    display: inline-block;
+}
+.switch {
+  position: relative;
+  display: flex;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #130f0f;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 24px;
+  left: 1px;
+  background-color: rgb(29, 29, 29);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #098624;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+.slider.round {
+  border-radius: 15px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.range {
+    accent-color: #02470c ;
+    width: 600px;
+}
